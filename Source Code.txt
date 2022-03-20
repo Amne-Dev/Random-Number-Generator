@@ -1,0 +1,37 @@
+import random
+
+print('Rng by uFeat')
+print('DISCLAIMER: Use numbers and numbers only')
+print('Programe Behavior:')
+print("The programe choses saves the value of the user's input")
+print('From the following prompts')
+
+small = input('Chose the 1st number (the smallest): ')
+
+smallest= int(small)
+
+big = input('Chose the 2nd number (the biggest): ')
+
+biggest = int(big)
+
+print('And then uses the random implementation for python')
+print('to finally give you a random number')
+print('in this case')
+if smallest < biggest:
+    n = random.randrange(smallest,biggest)
+    
+    print('The chosen number is: '+'\033[1m',n)
+    input('Press ENTER to exit')
+    
+elif smallest > biggest:
+    nnegative = random.randrange(biggest,smallest)
+
+    print('The chosen number is: '+'\033[1m',nnegative)
+    input('Press ENTER to exit')
+
+elif smallest == biggest:   
+    print('The chosen number is: '+'\033[1m',smallest)
+    input('Press ENTER to exit')
+
+else:
+    input('Invalid option restart the programe and try again')        
